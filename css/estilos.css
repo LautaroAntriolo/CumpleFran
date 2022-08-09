@@ -6,7 +6,7 @@
 
 body {
 	background: #EFEFEF;
-	color:#07b9ad;
+	color: #363639;
     font-family: 'Work Sans', sans-serif;
 }
 
@@ -15,7 +15,7 @@ body {
 /* ? ----- PORTADA ----- */
 .portada {
 	width: 100%;
-	background: linear-gradient(60deg, #07b9ad, #14524b);
+	background: #EFEFEF;
 
 	min-height: 100vh;
 	position: fixed;
@@ -50,14 +50,13 @@ body {
 .portada .header .mensaje {
 	font-size: 30px;
 	font-weight: 600;
-	text-decoration:underline;
 }
 
 
 
 /* ? ----- MAIN ----- */
 main {
-	max-width: 900px;
+	max-width: 1000px;
 	margin: auto;
 	width: 90%;
 	padding: 60px 0;
@@ -76,7 +75,8 @@ main {
 }
 
 .simply-section {
-	background:  #096861;
+	background: #fff;
+	color: red;
 	width: 180px;
 	height: 180px;
 	margin: 0 20px;
@@ -96,4 +96,3 @@ main {
 	font-weight: 300;
 	font-size: 30px;
 }
-
