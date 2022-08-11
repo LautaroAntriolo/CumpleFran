@@ -1,21 +1,37 @@
 * {
-	margin: 0;
+	margin:0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
 body {
 	background: #EFEFEF;
-	color: #363639;
-    font-family: 'Work Sans', sans-serif;
+	font-family: "Chelsea Market", Georgia, serif
 }
 
+h1 {  
+	font-size: 72px;  
+	background: -webkit-linear-gradient(left top,#2872B7, #1BCEDF);
+	background: linear-gradient(to bottom right, #2872B7, #1BCEDF);
+	-webkit-background-clip: text;  
+	-webkit-text-fill-color: transparent;
+}  
+
+.faltan{
+	margin-top: 45px;
+}
 
 
 /* ? ----- PORTADA ----- */
 .portada {
 	width: 100%;
-	background: #EFEFEF;
+	background: -webkit-linear-gradient(left top, #0a2b2e,#2d2333);
+	background: linear-gradient(to bottom right,#0a2b2e,#2d2333);
+	background-image: url("../img/number30.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size:contain;
+	opacity: 1;
 
 	min-height: 100vh;
 	position: fixed;
@@ -56,13 +72,23 @@ body {
 
 /* ? ----- MAIN ----- */
 main {
-	max-width: 1000px;
-	margin: auto;
-	width: 90%;
-	padding: 60px 0;
-	font-size: 18px;
-	line-height: 28px;
-	text-align: left;
+	width: 100%;
+	background: -webkit-linear-gradient(left top, #0f464b,#463650);
+	background: linear-gradient(to bottom right,#114b50,#463650);
+
+	min-height: 100vh;
+	top: 0;
+	left: 0;
+	right: 0;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	transition: .5s ease-out all;
+
+	font-size: 70px;
 }
 
 
@@ -75,8 +101,9 @@ main {
 }
 
 .simply-section {
-	background: #fff;
-	color: red;
+	background: -webkit-linear-gradient(left top,#2872B7, #1BCEDF);
+	background: linear-gradient(to bottom right, #2872B7, #1BCEDF);
+	opacity: 0.7;
 	width: 180px;
 	height: 180px;
 	margin: 0 20px;
@@ -84,15 +111,100 @@ main {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.2);
 }
-
+/* Agregarle sombras al simply-section */
 .simply-amount {
 	display: block;
+	color: white;
+	opacity: 1;
 	font-size: 50px;
 	font-weight: 700;
+	
 }
 
 .simply-word {
+	color: white;
+	opacity: 1;
 	font-weight: 300;
 	font-size: 30px;
 }
+
+/* Pantallas grandes (desktops de menos de 1200px) */
+@media (max-width: 1199.98px) {
+	h1{
+		font-size: 50px;
+	}
+ }
+
+/* Pantallas medianas (tablets de menos de 992px) */
+@media (max-width: 991.98px) {
+	h1{
+		font-size: 40px;
+	}
+}
+
+/* Pantallas pequeñas (móviles en landscape de menos de 768px) */
+@media (max-width: 767.98px) {
+
+.faltan{
+	margin-bottom: 1rem;
+}
+
+.portada .header {
+	margin-bottom: 1rem;
+}
+.portada{
+	background-position-y: -1rem;
+}
+
+.portada .header .logotipo {
+	font-size: 3rem;
+	font-size: 90;
+	margin-bottom: 2rem;
+}
+/* ? ----- MAIN ----- */
+main {
+	width: 100%;
+	min-height: 100vh;
+	font-size: 70px;
+}
+
+
+/* ? ----- Cuenta Regresiva ----- */
+#cuenta {
+	display: flex;
+	justify-content: center;
+	margin-bottom: 75px;
+}
+
+.simply-section {
+	background: -webkit-linear-gradient(left top,#2872B7, #1BCEDF);
+	background: linear-gradient(to bottom right, #2872B7, #1BCEDF);
+	width: 7rem;
+	height: 180px;
+	margin: 0 7px;
+	border-radius: 5px;
+}
+/* Agregarle sombras al simply-section */
+.simply-amount {
+	display: block;
+	color: white;
+	font-size: 3.125rem;
+	font-weight: 100;
+	
+}
+
+.simply-word {
+	color: white;
+	font-weight: 100;
+	font-size: 1.125rem;
+}
+ }
+
+/* Pantallas muy pequeñas (móviles en portrait de menos de 576px) */
+@media (max-width: 575.98px) {
+	h1{
+		font-size: 25px;
+	}
+ }
